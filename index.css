@@ -1,0 +1,32 @@
+.body-down { 
+	padding-top: 70px;
+  	font-family: 'Courgette', cursive;
+  	background:	#000000 url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/bo_play_pattern.png") fixed;
+}
+#home{
+  background-color:	#b3ccff;
+}
+#about{
+  background-color:#80ff80;
+}
+#portfolio{
+  background-color:#ffff80;
+}
+#contact{
+  background-color:#b3ffff;
+}
+#footer{
+  background-color:#df80ff;
+}
+.upper{
+  font-family: 'Dancing Script', cursive;
+}
+
+.naming{
+  font-family: 'Kalam', cursive;
+}
+
+.size{
+	height: 25% !important;
+  width: 25%;
+}
