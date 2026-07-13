@@ -45,6 +45,24 @@ const formMessage = document.getElementById('form-message');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
+
+  const name = form.elements['name'].value.trim();
+  const email = form.elements['email'].value.trim();
+  const message = form.elements['message'].value.trim();
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!name || !email || !message) {
+    formMessage.textContent = 'Please fill in all fields before submitting.';
+    formMessage.style.color = '#ef4444';
+    return;
+  }
+
+  if (!emailPattern.test(email)) {
+    formMessage.textContent = 'Please enter a valid email address.';
+    formMessage.style.color = '#ef4444';
+    return;
+  }
+
   formMessage.textContent = "Thanks for your message! I'll get back to you soon.";
   formMessage.style.color = '#6366f1';
   form.reset();
